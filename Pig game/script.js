@@ -17,7 +17,7 @@ document.getElementById("rotate").onclick = function(){
     //roll the dice
     dice = Math.floor(Math.random()*6 + 1);
     
- if(gameRunning){    
+  if(gameRunning){    
      //get value of dice
     document.querySelector("#dice-img").src = "assets/dice-"+dice+".JPG";
     
@@ -58,7 +58,7 @@ document.getElementById("rotate").onclick = function(){
         document.querySelector(".player-0").classList.toggle("active");
         document.querySelector(".player-1").classList.toggle("active");
     }
- }
+  }
 }
 
 
@@ -94,7 +94,7 @@ document.getElementById("hold").onclick = function(){
       document.querySelector(".player-1").classList.toggle("active");
     }
   }
- }
+}
 
 
 document.querySelector("#new").addEventListener('click',game);
@@ -113,6 +113,3 @@ function game() {
     document.querySelector("#pl-0").innerHTML = "<h2 id='pl-0'>PLAYER 1 "+"<i class='fas fa-cicle'>"+"</i></h2>";
     document.querySelector("#pl-1").innerHTML = "<h2 id='pl-1'>PLAYER 2 "+"<i class='fas fa-cicle'>"+"</i></h2>";
 }
-
- 
-
